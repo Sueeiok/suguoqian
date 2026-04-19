@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 基础练习</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        pre { background: #f5f5f5; padding: 10px; border-radius: 6px; }
+    </style>
+</head>
+<body>
+    <h1>JavaScript 基础练习</h1>
+    <p>打开浏览器控制台（F12）查看运行结果</p >
+
+    <script>
+        // ========== 1. 变量定义 ==========
+        let name = "张三";
+        const age = 20;
+        var city = "北京";
+
+        console.log("姓名：", name);
+        console.log("年龄：", age);
+        console.log("城市：", city);
+
+        // ========== 2. 变量类型 ==========
+        let str = "字符串";
+        let num = 123;
+        let isOK = true;
+        let und = undefined;
+        let nul = null;
+        let obj = { id: 1, title: "JS练习" };
+        let arr = [1, 2, 3, 4];
+
+        console.log(typeof str);
+        console.log(typeof num);
+        console.log(typeof isOK);
+        console.log(typeof und);
+        console.log(typeof nul);
+        console.log(obj);
+        console.log(arr);
+
+        // ========== 3. 表达式与运算 ==========
+        let a = 10;
+        let b = 3;
+        console.log("a + b =", a + b);
+        console.log("a - b =", a - b);
+        console.log("a * b =", a * b);
+        console.log("a / b =", a / b);
+        console.log("a % b =", a % b);
+
+        // ========== 4. 流程控制：if / else ==========
+        let score = 85;
+        if (score >= 90) {
+            console.log("优秀");
+        } else if (score >= 60) {
+            console.log("及格");
+        } else {
+            console.log("不及格");
+        }
+
+        // ========== 5. 循环：for ==========
+        console.log("1 到 5：");
+        for (let i = 1; i <= 5; i++) {
+            console.log(i);
+        }
+
+        // ========== 6. 函数 ==========
+        function add(x, y) {
+            return x + y;
+        }
+
+        let result = add(10, 20);
+        console.log("10 + 20 =", result);
+
+        // 箭头函数
+        const multiply = (x, y) => x * y;
+        console.log("10 * 20 =", multiply(10, 20));
+    </script>
+</body>
+</html>
